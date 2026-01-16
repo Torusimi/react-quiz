@@ -1,17 +1,9 @@
-console.log("Js LOADED") 
+console.log("Js LOADED"); 
 
-const startBtn = document.getElementById("startBtn");
 
-if(startBtn){
-startBtn.addEventListener("click" , () => {
-    alert("Let`s GO!")
-})
-}
+const correctIndex = 1;
 
-const correctIndex =1;
-
-const buttons = document .querySelectorAll (".option-btn");
-
+const buttons = document.querySelectorAll(".option-btn");
 const result = document.getElementById("result");
 
 buttons.forEach((button) => {
@@ -20,15 +12,18 @@ buttons.forEach((button) => {
 
         const selectedIndex = Number(button.dataset.index);
 
-        if (selectedIndex ===correctIndex) {
-            result.textContent =" 正解！";
+        if (selectedIndex === correctIndex) {
+            result.textContent = "正解！";
             setTimeout(() => {
-                window.location.href ="result.html";
-            }, 800)
-        } else{
-            result.textContent ="不正解！";
+                window.location.href = "result.html";
+            }, 800);
 
+        } else{
+            result.textContent = "不正解!";
+            setTimeout(() => {
+                result.textContent = "";
+            }, 1000);
+            
         }
     });
-
 });
