@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  min-width: 320px;
+}
+ 
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  text-align: center;
+  margin: 0;
+}
+
+
+.container {
+  min-height: 100vh;              
+  display: flex;
+  flex-direction: column;     
+  justify-content: center;    
+  align-items: center;        
+  gap: 24px;            
+}
+
+.start-btn {
+  padding: 20px 32px;
+  font-size: 30px;
+  background-color: #fff;
+  color: #646cff;
+  text-decoration:underline;
+  border-radius:8px;
+  text-align: center;
+}
+
+.option-btn{
+  color: #646cff;
+  display: block;
+  font-size: 30px;
+  padding: 10px ;
+  background: #fff;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.button{
+  padding: 15px 10px;
+  background-color: #fff;
+}
+
+
+#result{
+  font-size: 30px;
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  padding: 15px 10px;
+  margin: 0;
+}
+
+.button-inner{
+  color: #646cff;
+  font-size: 20px;
+}
+
+.result{
+  font-size: 20px;
+  padding: 10px;
+}
