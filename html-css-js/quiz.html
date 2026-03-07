@@ -7,21 +7,40 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- templates:quiz-page-->
+    <!-- header -->
+    <header>
+        <!-- atoms:header-btn -->
+        <a class="header-text" href="index.html">クイズアプリ</a>
+    </header>
+    <!-- main -->
+    <!-- molecules:quiz-container -->
     <main class="container">
+        <!-- atoms:question-title -->
         <h1>Q.1 玉ねぎの花言葉は？</h1>
-
+        <!-- molecules:quiz-options -->
         <div class="options">
+            <!--atoms:option-btn  -->
             <a href="#" class="option-btn" data-index="0">儚い</a>
+            <!--atoms:option-btn  -->
             <a href="#" class="option-btn" data-index="1">永遠</a>
+            <!--atoms:option-btn  -->
             <a href="#" class="option-btn" data-index="2">切なさ</a>
+            <!--atoms:option-btn  -->
             <a href="#" class="option-btn" data-index="3">未来</a>
-            
         </div>
-
+        <!-- atoms:result-text -->
         <p id="result"></p>
-        <script src="js/main.js"></script>
-
     </main>
-    
+
+    <!-- footer -->
+    <footer>
+        <!-- atoms:food-btn -->
+        <a class="food-btn" href="food.html">フード画面へ</a>
+        <!-- atoms:copy-right -->
+        <p class="footer-text">©2026 Quiz App</p>
+    </footer>
+
+    <script src="js/quiz.js"></script>
 </body>
 </html>

@@ -7,11 +7,33 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- templates:indexPage -->
+    <!-- header-->
+    <header>
+        <!-- atoms:header-btn -->
+        <a class="header-text" href="index.html">クイズアプリ</a>
+    </header>
+    <!-- 以下main -->
+    <!-- molecules:quiz-start -->
     <main class="container">
-        <h1>Quiz App </h1>
-        <a href="quiz.html" class="start-btn">Start!</a>
+        <!-- atoms:title -->
+        <h1 style="color: blueviolet; background-color: blanchedalmond; text-decoration: underline;">Quiz App </h1>
+        <!-- atoms:start-btn -->
+        <a class="start-btn" href="quiz.html">Start!</a>
     </main>
     
-    <script src="js/main.js"></script>
+    <div>
+        <!-- atoms:start-text -->
+        <p id="text"> </p>
+    </div>
+    <!-- footer -->
+    <footer>
+        <!-- atoms:food-btn -->
+        <a class="food-btn" href="food.html">フード画面へ</a>
+        <!-- atoms:copy-right -->
+        <p class="footer-text">©2026 Quiz App</p>
+    </footer>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
