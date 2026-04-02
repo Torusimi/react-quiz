@@ -1,46 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App-Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- templates:quiz-page-->
     <!-- header -->
-    <header>
+    <header class="my-2 mx-3">
         <!-- atoms:header-btn -->
-        <a class="header-text" href="index.html">クイズアプリ</a>
+        <a class="fw-bold text-decoration-none fs-2 text-black" href="index.html">クイズアプリ</a>
     </header>
     <!-- main -->
     <!-- molecules:quiz-container -->
     <main class="container">
         <!-- atoms:question-title -->
-        <h1>Q.1 玉ねぎの花言葉は？</h1>
+        <h1 class="display-2">Q.1 玉ねぎの花言葉は？</h1>
+        <img src="img/onion.png" class="img-fluid quiz-img" alt="玉ねぎの写真">
         <!-- molecules:quiz-options -->
-        <div class="options">
+        <div class="row g-4 options">
             <!--atoms:option-btn  -->
-            <a href="#" class="option-btn" data-index="0">儚い</a>
+            <div class="col-12 col-md-6">
+                <a class="option-btn btn btn-outline-primary" href="#" data-index="0">儚い</a>
+            </div>
             <!--atoms:option-btn  -->
-            <a href="#" class="option-btn" data-index="1">永遠</a>
+            <div class="col-12 col-md-6">
+                <a class="option-btn btn btn-outline-primary" href="#" data-index="1">永遠</a>
+            </div>
             <!--atoms:option-btn  -->
-            <a href="#" class="option-btn" data-index="2">切なさ</a>
+            <div class="col-12 col-md-6">
+                <a class="option-btn btn btn-outline-primary" href="#" data-index="2">切なさ</a>
+            </div>
             <!--atoms:option-btn  -->
-            <a href="#" class="option-btn" data-index="3">未来</a>
+            <div class="col-12 col-md-6">
+                <a class="option-btn btn btn-outline-primary" href="#" data-index="3">未来</a>
+            </div>
         </div>
         <!-- atoms:result-text -->
         <p id="result"></p>
     </main>
 
     <!-- footer -->
-    <footer>
+    <footer class="my-2 mx-3 pt-5">
         <!-- atoms:food-btn -->
-        <a class="food-btn" href="food.html">フード画面へ</a>
+        <a class="btn btn-outline-primary" href="food.html">フード画面へ</a>
         <!-- atoms:copy-right -->
-        <p class="footer-text">©2026 Quiz App</p>
+        <p class="text-muted">©2026 Quiz App</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/quiz.js"></script>
 </body>
 </html>
